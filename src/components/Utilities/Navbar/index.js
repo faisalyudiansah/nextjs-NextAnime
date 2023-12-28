@@ -9,12 +9,10 @@ const Navbar = () => {
           <div>
             <Link href={'/'} className='font-serif font-bold text-2xl'>NEXTANIME</Link>
           </div>
-          <div>
-            <input
-              type="text"
-              className='p-1 rounded-xl'
-              placeholder='Search anime...' />
-          </div>
+          <input
+            type="text"
+            className='p-1 rounded-xl'
+            placeholder='Search anime...' />
         </div>
       </header>
     </>
