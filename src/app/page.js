@@ -9,10 +9,10 @@ export default async function Home() {
   return (
     <>
       <div className="flex justify-between items-center md:m-10 m-4">
-        <h1 className="font-serif font-bold md:text-2xl text-lg">Popular anime</h1>
+        <h1 className="font-serif font-bold md:text-xl text-lg">Popular anime</h1>
         <Link
           href={'/populer'}
-          className="text-white text-sm p-2 bg-orange-600 hover:bg-orange-500 rounded-xl">
+          className="text-white text-sm p-2 bg-orange-600 hover:bg-orange-500 rounded-lg">
           Popular anime
         </Link>
       </div>
