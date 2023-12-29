@@ -1,8 +1,8 @@
-import { Gabarito } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Utilities/Navbar'
 
-const fontFamily = Gabarito({ subsets: ['latin'] })
+const fontFamily = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nextanime',
