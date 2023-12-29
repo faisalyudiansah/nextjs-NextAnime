@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { FileSearch } from "@phosphor-icons/react"
 import Link from 'next/link'
 
-const Page = () => {
+const NotFoundPage = () => {
     useEffect(() => {
         document.body.style.overflow = 'hidden'
         return () => {
@@ -25,4 +25,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default NotFoundPage
