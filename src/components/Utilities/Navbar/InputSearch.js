@@ -10,13 +10,14 @@ const InputSearch = () => {
   let handleSearchRef = () => {
     let keywordSearch = searchRef.current.value
     routerNavigate.push(`/search/${keywordSearch}`)
+    searchRef.current.value = ''
   }
 
   return (
     <>
       <div className='relative'>
         <input
-          className='w-full p-1 rounded-xl text-orange-600 border outline-none'
+          className='w-full p-1 rounded-xl text-orange-600 border outline-none placeholder-orange-200'
           style={{ textIndent: '10px' }}
           placeholder='Search anime...'
           ref={searchRef}
