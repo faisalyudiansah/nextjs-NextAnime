@@ -5,7 +5,7 @@ import Navbar from '@/components/Utilities/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'NextAnime',
+  title: 'Nextanime',
   description: 'Explore the World of Animated Wonders!',
 }
 
