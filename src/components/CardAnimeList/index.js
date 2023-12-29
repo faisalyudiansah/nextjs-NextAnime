@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-const CardAnimeList = ({ topAnime }) => {
+const CardAnimeList = ({ animes }) => {
   return (
     <div className='md:m-10 m-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4'>
-      {topAnime.data.map((anime, i) => {
+      {animes.data.map((anime, i) => {
         return (
           <div key={i} className="card bg-orange-300 border shadow-md rounded-xl flex flex-col">
             <img

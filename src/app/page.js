@@ -9,7 +9,7 @@ export default async function Home() {
     <>
       <section>
         <HeaderAnimeList headerTitle="Popular Anime" linkTitle="Lihat semua" linkHref="/popular" />
-        <CardAnimeList topAnime={topAnime} />
+        <CardAnimeList animes={topAnime} />
       </section>
     </>
   )
