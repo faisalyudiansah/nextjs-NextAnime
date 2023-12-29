@@ -1,6 +1,14 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 
 const LoadingPage = () => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = 'visible'
+    }
+  }, [])
+
   return (
     <div className='min-h-screen flex justify-center items-center'>
       <div className='text-center'>
