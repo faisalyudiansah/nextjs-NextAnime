@@ -23,7 +23,11 @@ const InputSearch = () => {
           onKeyDown={(event) => event.key === 'Enter' && handleSearchRef()}
         />
         <button className='absolute top-1 end-2'>
-          <MagnifyingGlass className='text-orange-600' size={24} onClick={handleSearchRef} />
+          <MagnifyingGlass
+            className='text-orange-600 hover:text-orange-400'
+            size={24}
+            onClick={handleSearchRef}
+          />
         </button>
       </div>
     </>

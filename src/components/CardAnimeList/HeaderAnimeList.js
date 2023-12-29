@@ -4,7 +4,7 @@ import Link from 'next/link'
 const HeaderAnimeList = ({ headerTitle, linkTitle, linkHref }) => {
   return (
     <div className="flex justify-between items-center md:m-10 m-4">
-      <h1 className="font-serif font-bold md:text-xl text-lg">{headerTitle}</h1>
+      <h1 className="font-serif font-bold md:text-xl text-orange-600 text-lg">{headerTitle}</h1>
       {linkTitle && linkHref ?
         <Link
           href={linkHref}
