@@ -9,6 +9,7 @@ const InputSearch = () => {
 
   let handleSearchRef = () => {
     let keywordSearch = searchRef.current.value
+    if (!keywordSearch || keywordSearch.length <= 2) return
     routerNavigate.push(`/search/${keywordSearch}`)
     searchRef.current.value = ''
   }
