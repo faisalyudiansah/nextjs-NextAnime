@@ -4,7 +4,7 @@ import Link from 'next/link';
 const CardAnimeList = ({ animes }) => {
   return (
     <div className='md:m-10 m-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4'>
-      {animes.data.map((anime, i) => (
+      {animes.data?.map((anime, i) => (
         <div key={i} className="card bg-orange-300 shadow-md rounded-xl flex flex-col">
           <Link href={`/detail-anime/${anime.mal_id}`}>
             <img
