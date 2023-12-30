@@ -15,7 +15,7 @@ const PopularPage = () => {
       setDataAnime(data)
     } catch (error) {
       console.log(error)
-    }
+    } 
   }
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const PopularPage = () => {
     <>
       <HeaderMenuPage headerTitle="List of all popular anime" page={page} />
       <CardAnimeList animes={dataAnime} />
-      <Pagination />
+      <Pagination page={page} setPage={setPage} lastPage={dataAnime.pagination?.last_visible_page} />
     </>
   )
 }
